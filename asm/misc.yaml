@@ -145,6 +145,10 @@ seasons:
 
   3f/460d/: ld hl,seedCapacityTable
 
+  # prevent biggoron's sword from taking up both inventory slots
+  02/54b3/: nop; nop
+  02/564e/: nop; nop
+
 ages:
   # vanilla bug: compass doesn't show D6 boss key chest.
   01/4eea/: db 34
@@ -245,3 +249,7 @@ ages:
   15/75bf/: db setglobalflag,a2 # bit 7 = unset flag
 
   3f/4607/: ld hl,seedCapacityTable
+
+  # prevent biggoron's sword from taking up both inventory slots
+  02/54f0/: nop; nop
+  02/568a/: nop; nop

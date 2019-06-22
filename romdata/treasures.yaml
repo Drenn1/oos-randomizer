@@ -67,6 +67,8 @@ common:
   flippers: 0x2e00
   gasha seed: 0x3401
 
+  biggoron's sword: 0x0c00
+
 seasons:
   # equip items
   spring: 0x0702
