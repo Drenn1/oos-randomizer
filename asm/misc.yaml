@@ -118,8 +118,8 @@ seasons:
   # top-left corner of the screen, where it can't be hit, and replace the lever
   # tile as well. this prevents the bridge from blocking the waterway.
   11/6737/: db 00,00 # object
-  21/6267/: db 04 # ricky tile
-  23/5cb7/: db 04 # moosh tile
+  #21/6267/: db 04 # ricky tile
+  #23/5cb7/: db 04 # moosh tile
 
   # feather game: don't give fools ore, and don't return fools ore.
   14/4881/: db delay1frame,delay1frame,delay1frame

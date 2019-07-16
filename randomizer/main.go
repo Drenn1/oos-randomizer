@@ -459,10 +459,10 @@ func readGivenRom(filename string) ([]byte, int, error) {
 		return nil, gameNil,
 			fmt.Errorf("%s is a JP ROM; only US is supported", filename)
 	}
-	if !romIsVanilla(b) {
-		return nil, gameNil,
-			fmt.Errorf("%s is an unrecognized oracles ROM", filename)
-	}
+//	if !romIsVanilla(b) {
+//		return nil, gameNil,
+//			fmt.Errorf("%s is an unrecognized oracles ROM", filename)
+//	}
 
 	game := ternary(romIsSeasons(b), gameSeasons, gameAges).(int)
 	return b, game, nil

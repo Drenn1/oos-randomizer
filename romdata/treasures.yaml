@@ -68,6 +68,7 @@ common:
   gasha seed: 0x3401
 
   biggoron's sword: 0x0c00
+  bombchus: 0x0d00
 
 seasons:
   # equip items
@@ -122,6 +123,13 @@ seasons:
   hard ore: 0x5200
   member's card: 0x5300
   master's plaque: 0x5400
+
+  cane: 0x0400
+  switch hook: 0x0a00
+  seed shooter: 0x0f00
+  harp: 0x2500 # actually tune of echoes, which gives harp as well
+  magic powder: 0x1f00
+
 
 ages:
   cane: 0x0400
