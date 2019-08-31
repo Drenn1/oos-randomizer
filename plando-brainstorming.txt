@@ -1,0 +1,58 @@
+Ages items:
+    * Power glove: Put this in a bait check, ie. desert?
+    * Switch / long hook:
+        * Break pots (no bracelet), bushes (no sword)
+        * Goron cave gap flipperless?
+        * D2: access map chest, kill moblins easier
+        * D3:
+            * Reach miniboss without feather
+            * Kill mothula, moldorms
+        * D4: cross pits without feather, maybe?
+        * D5:
+            * Get a small key (no magnet gloves)
+            * Cross water gap without flippers more easily
+        * D7: Cross 4-tile pit; reach miniboss capeless
+        * D8: Cut into sk room blocked by small barrier
+    * Cane of somaria:
+        * Reach d3 without flippers, seeds?
+        * D3 pot room (before bracelet, feather, with switch hook)
+        * D5 magnet ball room
+        * D6 magnet ball rooms
+        * D7 magnet room
+        * D8: Simplify HSS skip
+    * Seed shooter:
+        * Replace slingshot
+        * Replaces some uses of magic boomerang in d6
+    * Harp of ages: Useless except as a way to kill pols voice?
+    * Mermaid suit: Perhaps omit this
+        * Reach king moblin without dimitri, swimmer's ring
+        * Maybe skip poe sister with swimmer's ring?
+    * Throw in "collection items" (ie. island chart) as a teaser early on?
+        * Perhaps throw in a raft somehow?
+
+Ages bosses:
+    * Pumpkin head
+    * Shadow hag (make use of shooter)
+    * Eyesoar (make use of hook)
+    * Smog (make use of cane)
+    * Plasmarine
+    * Ramrock (make use of gloves)
+
+    * Replace aquamentus; gohma; manhandla; gleeok; medusa head.
+    * Shuffle bosses which aren't replaced, when possible.
+
+Ages minibosses:
+    * Giant Ghini
+    * Swoop
+    * Subterror (use for shovel)
+    * Armos Warrior
+    * Smasher
+    * Blue Stalfos
+    
+    * Replace goriya bros; facade; Syger; Vire (?); Frypolar.
+
+Linked game items:
+    * Bombchus: Give before bombs?
+    * Biggoron's sword: First sword
+        * Breaks pots
+    * Upgrades: master sword, satchel

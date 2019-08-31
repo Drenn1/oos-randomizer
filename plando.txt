@@ -1,0 +1,232 @@
+-- progression items --
+
+hero's cave key chest        <- bombs, 10
+hero's cave rupee chest      <- gnarled key
+horon village SE chest       <- magic powder
+
+D2 left from entrance        <- gasha seed
+D2 rope drop                 <- D2 small key
+D2 rope chest                <- biggoron's sword
+D2 pot chest                 <- bracelet
+D2 moblin chest              <- D2 boss key
+D2 blade chest               <- D2 small key
+D2 spiral chest              <- gasha seed
+D2 roller chest              <- gasha seed
+D2 terrace chest             <- gasha seed
+D2 boss                      <- cane
+
+horon village SW chest       <- shovel
+shop, 150 rupees             <- rod of summer
+blaino's gym                 <- gasha seed
+
+dry eyeglass lake, west cave <- gasha seed
+dry eyeglass lake, east cave <- gasha seed
+floodgate keeper's house     <- floodgate key
+
+D1 stalfos drop              <- gasha seed
+D1 floormaster room          <- D1 small key
+D1 stalfos chest             <- gasha seed
+D1 goriya chest              <- gasha seed
+D1 block-pushing room        <- D1 small key
+D1 lever room                <- gasha seed
+D1 railway chest             <- round jewel
+D1 button chest              <- gasha seed
+D1 basement                  <- D1 boss key
+D1 boss                      <- satchel
+
+horon village tree           <- mystery seeds
+north horon tree             <- pegasus seeds
+spool swamp tree             <- ember seeds
+
+woods of winter tree         <- gale seeds
+
+D3 roller chest              <- switch hook
+D3 quicksand terrace         <- bombchus
+D3 moldorm chest             <- gasha seed
+D3 bombed wall chest         <- D3 small key
+D3 mimic chest               <- D3 boss key
+D3 water room                <- D3 small key
+D3 giant blade room          <- gasha seed
+D3 boss                      <- roc's feather/cape
+D3 trampoline chest          <- gasha seed
+D3 zol chest                 <- gasha seed
+
+temple of seasons            <- sword
+subrosian dance hall         <- gasha seed
+tower of winter              <- gasha seed
+subrosia seaside             <- gasha seed
+subrosia market, 2nd item    <- ricky's flute
+subrosia market, 5th item    <- gasha seed
+subrosia, open cave          <- gasha seed
+tower of autumn              <- gasha seed
+
+maku tree                    <- gasha seed
+master diver's challenge     <- gasha seed
+
+D6 1F east                   <- D6 small key
+D6 1F terrace                <- seed shooter
+D6 crystal trap room         <- D6 small key
+D6 escape room               <- D6 boss key
+D6 vire chest                <- boomerang
+D6 boss                      <- D6 small key
+D6 beamos room               <- gasha seed
+D6 magnet ball drop          <- gasha seed
+D6 2F armos chest            <- gasha seed
+D6 2F gibdo chest            <- gasha seed
+D6 spinner north             <- gasha seed
+D6 armos hall                <- flippers
+
+black beast's chest          <- gasha seed
+
+samasa desert pit            <- gasha seed
+samasa desert chest          <- gasha seed
+tower of spring              <- gasha seed
+
+old man in treehouse         <- rod of winter
+cave south of mrs. ruul      <- gasha seed
+natzu region, across water   <- gasha seed
+chest in goron mountain      <- gasha seed
+eastern suburbs, on cliff    <- gasha seed
+
+woods of winter, 1st cave    <- gasha seed
+woods of winter, 2nd cave    <- gasha seed
+holly's house                <- rusty bell
+spool swamp cave             <- gasha seed
+
+sunken city tree             <- gale seeds
+moblin keep                  <- gasha seed
+sunken city, summer cave     <- gasha seed
+chest in master diver's cave <- gasha seed
+spring banana tree           <- gasha seed
+mt. cucco, platform cave     <- gasha seed
+mt. cucco, talon's cave      <- gasha seed
+diving spot outside D4       <- dragon key
+
+D4 north of entrance         <- bracelet
+D4 pot puzzle                <- D4 boss key
+D4 dark room                 <- D4 small key
+D4 maze chest                <- D4 small key
+D4 water ring room           <- gasha seed
+D4 pool                      <- D4 small key
+D4 terrace                   <- D4 small key
+D4 torch chest               <- D4 small key
+D4 cracked floor room        <- gasha seed
+D4 dive spot                 <- pyramid jewel
+D4 boss                      <- slingshot
+
+western coast, beach chest   <- gasha seed
+western coast, in house      <- rod of autumn
+
+chest on top of D2           <- gasha seed
+eyeglass lake, across bridge <- gasha seed
+cave north of D1             <- gasha seed
+
+D7 right of entrance         <- D7 small key
+D7 bombed wall chest         <- D7 small key
+D7 wizzrobe chest            <- D7 small key
+D7 zol button                <- D7 small key
+D7 magunesu chest            <- D7 boss key
+D7 armos puzzle              <- D7 small key
+D7 quicksand chest           <- flippers
+D7 spike chest               <- D7 small key
+D7 maze chest                <- square jewel
+D7 B2F drop                  <- gasha seed
+D7 stalfos chest             <- gasha seed
+D7 boss                      <- roc's feather/cape
+
+goron mountain, across pits  <- spring banana
+cave outside D2              <- gasha seed
+subrosia village chest       <- gasha seed
+subrosian wilds chest        <- gasha seed
+
+D8 eye drop                  <- x-shaped jewel
+D8 three eyes chest          <- harp
+D8 hardhat drop              <- D8 boss key
+D8 pols voice chest          <- D8 small key
+D8 ghost armos drop          <- D8 small key
+D8 SW lava chest             <- D8 small key
+D8 SE lava chest             <- D8 small key
+D8 boss                      <- slingshot
+
+D8 spark chest               <- gasha seed
+D8 darknut chest             <- D8 small key
+D8 spike room                <- D8 small key
+D8 spinner chest             <- gasha seed
+D8 magnet ball room          <- gasha seed
+D8 armos chest               <- gasha seed
+
+lost woods                   <- seed satchel
+tarm ruins, under tree       <- energy ring
+tarm ruins tree              <- scent seeds
+
+D5 left chest                <- D5 small key
+D5 spiral chest              <- D5 small key
+D5 cart chest                <- gasha seed
+D5 spinner chest             <- D5 small key
+D5 gibdo/zol chest           <- D5 small key
+D5 magnet ball chest         <- gasha seed
+D5 terrace chest             <- gasha seed
+D5 armos chest               <- D5 boss key
+D5 stalfos room              <- D5 small key
+D5 basement                  <- magnet gloves
+D5 boss                      <- gasha seed
+
+-- other items --
+
+shop, 20 rupees              <- bombs, 10
+shop, 30 rupees              <- wooden shield
+hero's cave sword chest      <- D0 small key
+
+
+inaccessible:
+
+master diver's reward        <- gasha seed
+
+member's shop 1              <- gasha seed
+member's shop 2              <- gasha seed
+member's shop 3              <- gasha seed
+
+subrosia, locked cave        <- gasha seed
+tower of summer              <- gasha seed
+subrosia market, 1st item    <- gasha seed
+subrosian smithy             <- gasha seed
+great furnace                <- gasha seed
+
+
+
+
+-- dungeon entrances --
+
+D1 entrance <- D2
+D2 entrance <- D3
+D3 entrance <- D1
+D8 entrance <- D6
+D4 entrance <- D4
+D7 entrance <- D7
+D5 entrance <- D8
+D6 entrance <- D5
+
+
+-- subrosia portals --
+
+eastern suburbs      <- volcanoes east
+eyeglass lake        <- great furnace
+horon village        <- house of pirates
+mt. cucco            <- strange brothers
+spool swamp          <- D8 entrance
+temple remains lower <- subrosia market
+temple remains upper <- volcanoes west
+
+
+-- default seasons --
+
+eastern suburbs <- summer
+holodrum plain  <- winter
+lost woods      <- winter
+north horon     <- winter
+spool swamp     <- spring
+sunken city     <- spring
+tarm ruins      <- autumn
+temple remains  <- summer
+western coast   <- spring
+woods of winter <- autumn

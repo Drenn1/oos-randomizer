@@ -1,0 +1,196 @@
+TODOS:
+    * Port power glove
+    * Check if poe skip 2 works with mermaid suit
+    * Modify D6 room to facilitate seed shooter use, and add owl to earlier room
+    * Fix outstanding bugs
+        * Test all text, sprite gfx changes
+
+    * Tile changes removed from rando, may need to be redone:
+        * Outside D4
+        * Eyeglass lake water removed
+        * Eyeglass lake ledge
+        * Holly's house
+        * D7 snow removal
+
+DONE TASKS:
+    * Port cane
+    * Port switch hook
+    * Port seed shooter
+        * Verify seed shooter tricks work
+    * Port pumpkin head
+    * Implement powder
+    * Port black tower
+    * Fix up sprites and text upon obtaining items
+
+NOT DOING:
+    * Port harp of ages
+    * Port Plasmarine
+
+PROGRESSION SUMMARY:
+    Start off with bombs, powder, gnarled key. Gain access to D2.
+
+    In D2 we get biggoron's sword, which is used to get the bracelet from the
+    map chest. At the end of the dungeon is the cane.
+
+    In town, you can get shovel from the SW chest, and summer from the shop.
+
+    (TODO: where is sword? Maybe temple of seasons?)
+
+    This opens up north horon, specifically the path to D3. Floodgate key is
+    vanilla and opens up D3, which is actually D1. The cane must be used to
+    access D3, without having flippers or pegasus seeds.
+
+    There's nothing particularly shocking in D1. Maybe throw in some jewels?
+    But the boss turns out to be pumpkin head, and he has the satchel.
+    Immediately, the player has access to ember seeds, pegasus seeds, and
+    mystery seeds.
+
+    Eastern Suburbs is now accessible. Woods of winter gives gale
+    seeds, conveniently. Subrosia portal leads to subrosia, but player should
+    enter D2 (D3) first.
+
+    By now, they should have a hint that feather is on Mothula (and Gleeok has
+    cape?). They will get the switch hook and use that to reach Mothula without
+    feather.
+
+    Subrosia portal is vanilla. In subrosia, they'll find a sword, and a flute
+    in the market (needs feather). The flute allows them to access D6 (D8
+    entrance) through the spool swamp portal.
+
+    (TODO: L-1 boomerang should be prior to here, or in D6?)
+
+    Next they'll go to D6, where they'll get seed shooter. They should have
+    a hint that magic boomerang is "near a trampoline in D6". They'll use seed
+    shooter to hit the orbs, instead of magic boomerang. Although possible
+    normally, this is extremely difficult, so some rooms may need to be modified
+    slightly. They'll get magic boomerang and flippers here.
+
+    (TODO: Got winter, dragon key, pirate's bell somewhere?)
+
+    There's now a choice between D4 (in D4) and D7 (in D5). D4 is doable, but
+    does not contain any progression.
+
+    In D4, use of seed shooter will be required, and slingshot will be on Gohma
+    (though it's useless). They'll also get power glove to speed up the
+    pot-pushing puzzle.
+
+    In D7, cape is on Gleeok (should have a hint for this). Switch hook can be
+    used to hit the button. Maybe change the room layout so that this is
+    necessary?
+
+    Will also get mermaid suit in D7. Should test whether it's possible to skip
+    the poe with mermaid suit + swimmer's ring.
+
+    (TODO: fall in D7?)
+
+    D8 (in D5) is now unlocked. HSS skip will be required, as HSS is on Medusa
+    Head (should have a hint for this). Can use the cane to make HSS skip
+    easier. Key layout may be problematic, though. Might throw in Tune of Echoes
+    in one of the chests.
+
+    (TODO: Spring and the jewels)
+
+    With all seasons and jewels, D5 (in D6) is unlocked. The gloves are in the
+    vanilla BK location; cane is needed to get to it. Might need to prevent
+    player from activating the magnet ball, or move it to a non-blocking
+    location.
+
+    Finally, onox's castle is replaced with the black tower.
+
+Dungeon ordering:
+    D5: late-game (to complete, at least; magnet gloves late in dungeon)
+    D6: mid-game (before boomerang / shooter, after cane, feather)
+    D7: mid-game (after cane/hook; before cape)
+
+    D2 (biggoron's sword, bracelet, cane)
+        A bit too jam-packed with items.
+
+    D1 (shovel, satchel), (boss is pumpkin head)
+        8/10. Kinda boring dungeon, but the boss is a nice twist.
+
+    D3 (switch hook, feather)
+        9/10. Creative way to reach the boss.
+
+    D6 (seed shooter, flippers, boomerang) (boss is plasmarine)
+        7/10. Couldn't put boomerang in a thematically nice location, and rooms
+        have to be modified for the shooter to work.
+
+    D4 (power glove, slingshot)
+        Power glove is a cute touch, but it's useless, as is the slingshot.
+
+    D7 (mermaid suit, cape)
+        Creative use of switch hook, but little else.
+
+    D8 (harp of ages, HSS)
+        Creative use of cane, but little else.
+
+    D5 (magnet gloves)
+        Use of cane is obvious, but cool nonetheless.
+
+Key item locations:
+    Satchel: D1 Aquamentus
+    Bracelet: D2 Map Chest
+    Feather: D3 Mothula
+    Slingshot: D4 BK
+    Magnet Glove: D5 BK (NOTE: Could magnet ball block path?)
+    Magic boomerang: Pre-Vire
+    Cape: D7 Gleeok
+    Hyper Slingshot: D8 Medusa Head
+
+    flippers:
+    Swords:
+    Fool's ore:
+    4x Seasons:
+    Shovel:
+    Flute:
+    3x Keys:
+    4x Jewels:
+
+Essential owl hints:
+    * The feather is on Mothula.
+    * The boomerang is on the level 6 boss.
+    * The cape is on the level 7 boss.
+    * The slingshot is on the level 8 boss.
+
+Essential item pool:
+    * Sword (2)
+    * Feather (2)
+    * Slingshot (2)
+    * Gloves
+    * Bracelet
+    * Zora's flippers
+    * Shovel
+    * Winter, Summer, Spring, Fall
+    * Satchel (2)
+    * Fool's ore
+    * Flute
+    * Boomerang (2)
+
+    * -Gnarled Key
+    * Floodgate Key
+    * Dragon Key
+    * Jewels (4)
+    * Rusty Bell
+
+Optional:
+    * Treasure Map
+    * Red/Blue Ore
+    * Star-shaped ore
+    * Ribbon
+    * Hard Ore
+    * Member's card
+    * Master's Plaque
+    * -Spring Banana
+    * Heart containers (8)
+    * Iron Shield
+
+Filler items:
+    * Rings
+    * Bombs
+    * Rupees
+
+Cool rings:
+    * Expert's, fist rings
+    * Swimmer's ring
+    * Energy ring to hit far-away switches (?)
+    * Steadfast ring to encourage movement through spikes without feather
