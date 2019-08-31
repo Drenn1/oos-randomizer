@@ -148,6 +148,7 @@ seasons:
   # prevent biggoron's sword from taking up both inventory slots
   02/54b3/: nop; nop
   02/564e/: nop; nop
+  02/5652/: jr 09
 
 ages:
   # vanilla bug: compass doesn't show D6 boss key chest.
