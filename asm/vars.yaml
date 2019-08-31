@@ -59,7 +59,7 @@ seasons:
   3f/44ce/: ld hl,4547 # shift lose items table pointer
 
   # 33 for ricky, 23 for dimitri, 13 for moosh (03 is strange flute)
-  3f/6747/flutePalette: db 03
+  3f/7fff/flutePalette: db 03
 
 ages:
   # map pop-up icons for seed trees

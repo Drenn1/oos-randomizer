@@ -8,64 +8,64 @@ seasons:
   # all this text overwrites the text from the initial rosa encounter, which
   # runs from 1f:4533 to 1f:45c1 inclusive. the last entry is displayed at
   # the end of any warning message.
-  cliffWarningText: |
-    \x0c\x00\x02\x3bgo \x05\x73\x01 # If you go down
-    there,\x04\x2d won't\x01 # there, you won't
-    be \x02\xa4\x05\x0f\x01 # be able to get
-    \x04\x9f up\x03\xa4 # back up.
-    \x07\x03 # (jump to end text)
-  hssSkipWarningText: |
-    \x0c\x00\x02\x3bskip\x01 # If you skip
-    keys,\x04\xaa\x03\x2c\x01 # keys, use them
-    \x03\x70ly\x03\xa4 # carefully.
-    \x07\x03 # (jump to end text)
-  warningEndText: |
-    \x0c\x00Continue at\x01 # Continue at
-    \x03\x0bown risk!\x00 # your own risk!
+  #cliffWarningText: |
+  #  \x0c\x00\x02\x3bgo \x05\x73\x01 # If you go down
+  #  there,\x04\x2d won't\x01 # there, you won't
+  #  be \x02\xa4\x05\x0f\x01 # be able to get
+  #  \x04\x9f up\x03\xa4 # back up.
+  #  \x07\x03 # (jump to end text)
+  #hssSkipWarningText: |
+  #  \x0c\x00\x02\x3bskip\x01 # If you skip
+  #  keys,\x04\xaa\x03\x2c\x01 # keys, use them
+  #  \x03\x70ly\x03\xa4 # carefully.
+  #  \x07\x03 # (jump to end text)
+  #warningEndText: |
+  #  \x0c\x00Continue at\x01 # Continue at
+  #  \x03\x0bown risk!\x00 # your own risk!
 
-  emberSeedText: |
-    \x02\x12\x04\x79\x01 # You got Ember
-    \x02\x53! \x05\xa9\x01 # Seeds! Open
-    y\x02\x65 # your Seed
-    \x02\x6e\x05\xda\x04\xaa\x01 # Satchel to use
-    them.\x00 # them.
+  #emberSeedText: |
+  #  \x02\x12\x04\x79\x01 # You got Ember
+  #  \x02\x53! \x05\xa9\x01 # Seeds! Open
+  #  y\x02\x65 # your Seed
+  #  \x02\x6e\x05\xda\x04\xaa\x01 # Satchel to use
+  #  them.\x00 # them.
 
-  shopFluteText: |
-    \x09\x01\x03\xe2 # (insert item name)
-     15\x02\x1d\x01 # 150 Rupees
-    \x02\x00\x00 # OK / No thanks
-  membersShopSatchelText: |
-    \x09\x01\x03\xe2 # (insert item name)
-     30\x02\x1d\x01 # 300 Rupees
-    \x02\x00\x00 # OK / No thanks
-  membersShopGashaText: |
-    \x09\x01\x03\xe2 # (insert item name)
-     30\x02\x1d\x01 # 300 Rupees
-    \x02\x00\x00 # OK / No thanks
-  membersShopMapText: |
-    \x09\x01\x03\xe2 # (insert item name)
-     20\x02\x1d\x01 # 200 Rupees
-    \x02\x00\x00 # OK / No thanks
-  marketRibbonText: |
-    \x09\x01\x09\x00\x01 # (insert item name)
-    \x02\x08 # I'll trade for
-    \x02\x8e.\x01 # Star-Shaped Ore.
-    \x07\x2b # (jump to end text)
-  marketPeachStoneText: |
-    \x09\x01\x09\x00\x01 # (insert item name)
-    \x02\x08 # I'll trade for
-    \x09\x01\x0c\x08 \x02\x09\x01 # (number) Ore Chunks
-    \x05\xa1\x01 # and
-    \x09\x0110 \x04\x79 \x02\x53.\x01 # 10 Ember Seeds.
-    \x07\x2b # (jump to end text)
-  marketCardText: |
-    \x09\x01\x09\x00\x01 # (insert item name)
-    \x02\x08 # I'll trade for
-    \x09\x01\x0c\x08 \x02\x09.\x01 # (number) Ore Chunks
-    \x07\x2b # (jump to end text)
-  marketEndText: |
-    \x04\xfc\x02\x8b\x04\xb7 # How about it?
-    \x02\xfe\x03\xbf\x00 # Sure / No
+  #shopFluteText: |
+  #  \x09\x01\x03\xe2 # (insert item name)
+  #   15\x02\x1d\x01 # 150 Rupees
+  #  \x02\x00\x00 # OK / No thanks
+  #membersShopSatchelText: |
+  #  \x09\x01\x03\xe2 # (insert item name)
+  #   30\x02\x1d\x01 # 300 Rupees
+  #  \x02\x00\x00 # OK / No thanks
+  #membersShopGashaText: |
+  #  \x09\x01\x03\xe2 # (insert item name)
+  #   30\x02\x1d\x01 # 300 Rupees
+  #  \x02\x00\x00 # OK / No thanks
+  #membersShopMapText: |
+  #  \x09\x01\x03\xe2 # (insert item name)
+  #   20\x02\x1d\x01 # 200 Rupees
+  #  \x02\x00\x00 # OK / No thanks
+  #marketRibbonText: |
+  #  \x09\x01\x09\x00\x01 # (insert item name)
+  #  \x02\x08 # I'll trade for
+  #  \x02\x8e.\x01 # Star-Shaped Ore.
+  #  \x07\x2b # (jump to end text)
+  #marketPeachStoneText: |
+  #  \x09\x01\x09\x00\x01 # (insert item name)
+  #  \x02\x08 # I'll trade for
+  #  \x09\x01\x0c\x08 \x02\x09\x01 # (number) Ore Chunks
+  #  \x05\xa1\x01 # and
+  #  \x09\x0110 \x04\x79 \x02\x53.\x01 # 10 Ember Seeds.
+  #  \x07\x2b # (jump to end text)
+  #marketCardText: |
+  #  \x09\x01\x09\x00\x01 # (insert item name)
+  #  \x02\x08 # I'll trade for
+  #  \x09\x01\x0c\x08 \x02\x09.\x01 # (number) Ore Chunks
+  #  \x07\x2b # (jump to end text)
+  #marketEndText: |
+  #  \x04\xfc\x02\x8b\x04\xb7 # How about it?
+  #  \x02\xfe\x03\xbf\x00 # Sure / No
 
 ages:
   # "fix" pickup text for harp tunes - it's all weird and calls things wrong
