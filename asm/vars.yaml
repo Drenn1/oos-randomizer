@@ -7,16 +7,16 @@ seasons:
   # spring after you beat the game). note that these names don't correspond 1:1
   # with the names used on the overworld map, which aren't delineated based on
   # season boundaries.
-  01/7e60/northHoronSeason: db SEASON_WINTER
-  01/7e61/easternSuburbsSeason: db SEASON_AUTUMN
-  01/7e62/woodsOfWinterSeason: db SEASON_SUMMER
-  01/7e63/spoolSwampSeason: db SEASON_AUTUMN
-  01/7e64/holodrumPlainSeason: db SEASON_SPRING
-  01/7e65/sunkenCitySeason: db SEASON_SUMMER # also mt. cucco
-  01/7e67/lostWoodsSeason: db SEASON_AUTUMN
-  01/7e68/tarmRuinsSeason: db SEASON_SPRING # north of lost woods
-  01/7e6b/westernCoastSeason: db SEASON_WINTER
-  01/7e6c/templeRemainsSeason: db SEASON_WINTER
+  01/7e70/northHoronSeason: db SEASON_WINTER
+  01/7e71/easternSuburbsSeason: db SEASON_AUTUMN
+  01/7e72/woodsOfWinterSeason: db SEASON_SUMMER
+  01/7e73/spoolSwampSeason: db SEASON_AUTUMN
+  01/7e74/holodrumPlainSeason: db SEASON_SPRING
+  01/7e75/sunkenCitySeason: db SEASON_SUMMER # also mt. cucco
+  01/7e77/lostWoodsSeason: db SEASON_AUTUMN
+  01/7e78/tarmRuinsSeason: db SEASON_SPRING # north of lost woods
+  01/7e7b/westernCoastSeason: db SEASON_WINTER
+  01/7e7c/templeRemainsSeason: db SEASON_WINTER
 
   # locations of sparkles on treasure map
   02/6663/roundJewelCoords: db b5
