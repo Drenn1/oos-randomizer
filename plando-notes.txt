@@ -1,20 +1,13 @@
 TODOS:
-    * Check if poe skip 2 works with mermaid suit
-    * Modify D6 room to facilitate seed shooter use, and add owl to earlier room
-    * Fix outstanding bugs
-        * Test all text, sprite gfx changes
-
-    * Tile changes removed from rando, may need to be redone:
-        * Outside D4
-        * Eyeglass lake water removed
-        * Eyeglass lake ledge
-        * Holly's house
-        * D7 snow removal
+    * Replace gasha seeds with maps, compasses, hearts, rings, etc.
 
 OUTSTANDING BUGS:
-    * Biggoron's sword graphic has transparency
-    * Text on getting ember seeds
+    * Weird palette in D2
+
+FIXED BUGS:
     * Season on exiting D2
+    * Text on getting ember seeds
+    * Biggoron's sword graphic has transparency
 
 DONE TASKS:
     * Port cane
@@ -27,6 +20,15 @@ DONE TASKS:
     * Fix up sprites and text upon obtaining items
     * Port power glove
     * Port mermaid suit
+    * Check if poe skip 2 works with mermaid suit (it does, with swimmer's ring)
+    * Modify D6 room to facilitate seed shooter use, and add owl to earlier room
+    * Tile changes removed from rando, redone in disassembly:
+        * Outside D4
+        * Eyeglass lake water removed
+        * Eyeglass lake ledge
+        * Holly's house
+        * D7 snow removal
+    * Implement owl hints
 
 NOT DOING:
     * Port harp of ages
@@ -113,13 +115,13 @@ Dungeon ordering:
         A bit too jam-packed with items.
 
     D1 (shovel, satchel), (boss is pumpkin head)
-        8/10. Kinda boring dungeon, but the boss is a nice twist.
+        Kinda boring dungeon, but the boss is a nice twist.
 
     D3 (switch hook, feather)
-        9/10. Creative way to reach the boss.
+        Creative way to reach the boss.
 
     D6 (seed shooter, flippers, boomerang) (boss is plasmarine)
-        7/10. Couldn't put boomerang in a thematically nice location, and rooms
+        Couldn't put boomerang in a thematically nice location, and rooms
         have to be modified for the shooter to work.
 
     D4 (power glove, slingshot)

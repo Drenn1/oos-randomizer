@@ -30,7 +30,7 @@ D1 goriya chest              <- gasha seed
 D1 block-pushing room        <- D1 small key
 D1 lever room                <- gasha seed
 D1 railway chest             <- round jewel
-D1 button chest              <- gasha seed
+D1 button chest              <- snowshoe ring
 D1 basement                  <- D1 boss key
 D1 boss                      <- satchel
 
@@ -126,7 +126,7 @@ D7 bombed wall chest         <- D7 small key
 D7 wizzrobe chest            <- D7 small key
 D7 zol button                <- D7 small key
 D7 magunesu chest            <- D7 boss key
-D7 armos puzzle              <- D7 small key
+D7 armos puzzle              <- gasha seed
 D7 quicksand chest           <- flippers
 D7 spike chest               <- D7 small key
 D7 maze chest                <- square jewel
@@ -140,7 +140,7 @@ subrosia village chest       <- gasha seed
 subrosian wilds chest        <- gasha seed
 
 D8 eye drop                  <- x-shaped jewel
-D8 three eyes chest          <- harp
+D8 three eyes chest          <- gasha seed
 D8 hardhat drop              <- D8 boss key
 D8 pols voice chest          <- D8 small key
 D8 ghost armos drop          <- D8 small key
@@ -149,14 +149,14 @@ D8 SE lava chest             <- D8 small key
 D8 boss                      <- slingshot
 
 D8 spark chest               <- gasha seed
-D8 darknut chest             <- D8 small key
+D8 darknut chest             <- gasha seed
 D8 spike room                <- D8 small key
-D8 spinner chest             <- gasha seed
-D8 magnet ball room          <- gasha seed
+D8 spinner chest             <- D8 small key
+D8 magnet ball room          <- D8 small key
 D8 armos chest               <- gasha seed
 
 lost woods                   <- seed satchel
-tarm ruins, under tree       <- energy ring
+tarm ruins, under tree       <- gasha seed
 tarm ruins tree              <- scent seeds
 
 D5 left chest                <- D5 small key
