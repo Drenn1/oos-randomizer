@@ -149,6 +149,8 @@ seasons:
   02/54b3/: nop; nop
   02/564e/: nop; nop
   02/5652/: jr 09
+  # fix blaino deleting biggoron's sword
+  15/5cd6/: db cd
 
 ages:
   # vanilla bug: compass doesn't show D6 boss key chest.
