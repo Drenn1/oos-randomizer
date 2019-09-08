@@ -260,7 +260,7 @@ seasons:
   15/warnHssSkip: |
       ld a,(ca86) # check if ice puzzle room is visited?
       or a
-      ret nz
+      ret # was "ret nz". changed to "ret" to disable this entirely (for plando)
       call getThisRoomFlags
       bit 6,(hl)
       ret nz
