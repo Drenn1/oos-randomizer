@@ -160,10 +160,14 @@ seasons:
       db 19,01,19; dw 52b9 # satchel upgrade 1
       db 19,02,19; dw 52b9 # satchel upgrade 2 (same deal)
       db 16,01,16; dw powerGloveUpgradeData # power glove
+      db 2e,00,59; dw mermaidSuitUpgradeData # mermaid suit
       db ff
 
   15/powerGloveUpgradeData: |
     db 38,02,73,80
+
+  15/mermaidSuitUpgradeData: |
+    db 38,00,74,81
 
   15/getUpgradedTreasure: /include getUpgradedTreasure
   15/getTreasureData_body: /include getTreasureData_body

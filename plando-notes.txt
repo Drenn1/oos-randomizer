@@ -1,5 +1,4 @@
 TODOS:
-    * Port power glove
     * Check if poe skip 2 works with mermaid suit
     * Modify D6 room to facilitate seed shooter use, and add owl to earlier room
     * Fix outstanding bugs
@@ -26,6 +25,8 @@ DONE TASKS:
     * Implement powder
     * Port black tower
     * Fix up sprites and text upon obtaining items
+    * Port power glove
+    * Port mermaid suit
 
 NOT DOING:
     * Port harp of ages

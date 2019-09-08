@@ -69,7 +69,7 @@ tower of autumn              <- gasha seed
 
 chest on top of D2           <- rusty bell
 sunken city tree             <- gale seeds
-master diver's challenge     <- gasha seed
+master diver's challenge     <- swimmer's ring
 chest in master diver's cave <- gasha seed
 
 western coast, beach chest   <- star ore
@@ -81,15 +81,15 @@ eyeglass lake, across bridge <- gasha seed
 D6 1F east                   <- D6 small key
 D6 1F terrace                <- seed shooter
 D6 crystal trap room         <- D6 small key
-D6 escape room               <- D6 boss key
-D6 vire chest                <- boomerang
+D6 escape room               <- boomerang
+D6 vire chest                <- gasha seed
 D6 boss                      <- D6 small key
 D6 beamos room               <- D6 small key
-D6 magnet ball drop          <- gasha seed
 D6 2F armos chest            <- gasha seed
-D6 2F gibdo chest            <- gasha seed
+D6 2F gibdo chest            <- flippers
+D6 armos hall                <- D6 boss key
 D6 spinner north             <- gasha seed
-D6 armos hall                <- flippers
+D6 magnet ball drop          <- gasha seed
 
 samasa desert pit            <- gasha seed
 samasa desert chest          <- gasha seed
