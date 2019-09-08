@@ -12,6 +12,11 @@ TODOS:
         * Holly's house
         * D7 snow removal
 
+OUTSTANDING BUGS:
+    * Biggoron's sword graphic has transparency
+    * Text on getting ember seeds
+    * Season on exiting D2
+
 DONE TASKS:
     * Port cane
     * Port switch hook
@@ -54,21 +59,21 @@ PROGRESSION SUMMARY:
     feather.
 
     Subrosia portal is vanilla. In subrosia, they'll find a sword, and a flute
-    in the market (needs feather). The flute allows them to access D6 (D8
-    entrance) through the spool swamp portal.
+    in the market (needs feather). The flute allows them to get the pirate's
+    bell on top of d2. Pirate portal is in spool swamp. This leads to D6.
 
     (TODO: L-1 boomerang should be prior to here, or in D6?)
 
-    Next they'll go to D6, where they'll get seed shooter. They should have
-    a hint that magic boomerang is "near a trampoline in D6". They'll use seed
-    shooter to hit the orbs, instead of magic boomerang. Although possible
-    normally, this is extremely difficult, so some rooms may need to be modified
-    slightly. They'll get magic boomerang and flippers here.
+    In D6, they'll get seed shooter. They should have a hint that magic
+    boomerang is "near a trampoline in D6".  They'll use seed shooter to hit the
+    orbs, instead of magic boomerang.  Although possible normally, this is
+    extremely difficult, so some rooms may need to be modified slightly. They'll
+    get magic boomerang and flippers here.
 
     (TODO: Got winter, dragon key, pirate's bell somewhere?)
 
-    There's now a choice between D4 (in D4) and D7 (in D5). D4 is doable, but
-    does not contain any progression.
+    There's now a choice between D4 (in D4) and D7 (in D8; horon portal). D4 is
+    doable, but does not contain any progression.
 
     In D4, use of seed shooter will be required, and slingshot will be on Gohma
     (though it's useless). They'll also get power glove to speed up the
@@ -83,10 +88,11 @@ PROGRESSION SUMMARY:
 
     (TODO: fall in D7?)
 
-    D8 (in D5) is now unlocked. HSS skip will be required, as HSS is on Medusa
-    Head (should have a hint for this). Can use the cane to make HSS skip
-    easier. Key layout may be problematic, though. Might throw in Tune of Echoes
-    in one of the chests.
+    D8 (in D5) is now unlocked. It's fine to have it unlocked earlier, since
+    cape is required. HSS skip will be required, as HSS is on Medusa Head
+    (should have a hint for this). Can use the cane to make HSS skip easier. Key
+    layout may be problematic, though. Might throw in Tune of Echoes in one of
+    the chests.
 
     (TODO: Spring and the jewels)
 
