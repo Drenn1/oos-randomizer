@@ -1,3 +1,6 @@
 [submodule "lgbtasm"]
 	path = lgbtasm
 	url = https://github.com/jangler/lgbtasm
+[submodule "oracles-disasm"]
+	path = oracles-disasm
+	url = https://github.com/drenn1/oracles-disasm
