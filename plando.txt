@@ -139,14 +139,14 @@ cave outside D2              <- gasha seed
 subrosia village chest       <- subrosian ring
 subrosian wilds chest        <- gasha seed
 
-D8 eye drop                  <- x-shaped jewel
+D8 eye drop                  <- D8 boss key
 D8 three eyes chest          <- GBA nature ring
 D8 hardhat drop              <- snowshoe ring
 D8 pols voice chest          <- D8 small key
 D8 ghost armos drop          <- D8 small key
 D8 SW lava chest             <- D8 small key
 D8 SE lava chest             <- D8 small key
-D8 spark chest               <- D8 boss key
+D8 spark chest               <- x-shaped jewel
 D8 boss                      <- slingshot
 
 D8 darknut chest             <- D8 dungeon map
