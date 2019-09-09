@@ -175,7 +175,7 @@ Essential item pool:
     * Flute
     * Boomerang (2)
 
-    * -Gnarled Key
+    * Gnarled Key
     * Floodgate Key
     * Dragon Key
     * Jewels (4)
