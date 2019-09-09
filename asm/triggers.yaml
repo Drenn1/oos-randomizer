@@ -26,7 +26,7 @@ seasons:
 
   0a/4f8a/: cp a,00  # old man (round jewel)
   # dimitri also won't spawn normally if you have flippers.
-  09/4e55/: ld a,10
+  09/4e55/: ld a,5f # PLANDO: changed from TREASURE_CANE_OF_SOMARIA to 5f
 
   # allow desert pits to work even if player has the actual bell already.
   08/73a2/: nop; nop

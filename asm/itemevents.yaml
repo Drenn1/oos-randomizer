@@ -52,8 +52,8 @@ seasons:
       ld hl,makuTreeRooms
       call searchValue
       ret nz
-      ld hl,c693
-      set 2,(hl)
+      ld hl,c69d
+      set 6,(hl)
       ret
 
   # call giveTreasureCustom instead of giveTreasure in the shop iff the given
@@ -79,8 +79,8 @@ seasons:
       ld a,(de) # subid
       cp a,0d
       ret nz
-      ld hl,c693 # in wObtainedTreasureFlags
-      set 7,(hl)
+      ld hl,c69d # in wObtainedTreasureFlags
+      set 5,(hl)
       ret
   08/4bfb/: call shopGiveTreasure
 
@@ -178,18 +178,19 @@ seasons:
   # check treasure id 0a to determine whether the maku tree gives its intro
   # speech and item instead of checking essences.
   09/makuTreeCheckItem: |
-      ld a,0a
+      ld a,5e # Plando: changed from 0a (switch hook) to 5e
       call checkTreasureObtained
       ld a,(wEssencesObtained)
       ret
   09/7d95/: call makuTreeCheckItem
 
   # check fake treasure ids to track:
-  08/4a89/: ld a,0f # shop, 150 rupees
-  08/4af1/: ld a,0f # ^
+  # (PLANDO: these have been changed to not use ages items)
+  08/4a89/: ld a,5d # shop, 150 rupees
+  08/4af1/: ld a,5d # ^
   08/62fd/: ld a,12 # subrosia seaside
   09/7754/: ld a,10 # subrosia market item 5
-  09/7dfc/: ld a,0a # maku tree drop
+  09/7dfc/: ld a,5e # maku tree drop
   0b/72f0/: db jumpifitemobtained,11 # master diver
 
   # stop hero's cave chest from giving a second sword that causes a spin slash.
