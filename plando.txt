@@ -58,7 +58,7 @@ D3 boss                      <- roc's feather/cape
 D3 trampoline chest          <- D3 dungeon map
 D3 zol chest                 <- D3 compass
 
-spool swamp cave             <- GBA time ring
+spool swamp cave             <- rupees, 20
 tower of spring              <- heart container
 woods of winter, 2nd cave    <- piece of heart
 subrosia seaside             <- rupees, 5
@@ -79,19 +79,19 @@ subrosia market, 1st item    <- rod of autumn
 eyeglass lake, across bridge <- heart container
 
 D6 1F east                   <- D6 small key
+D6 magnet ball drop          <- blue ring
 D6 1F terrace                <- seed shooter
 D6 crystal trap room         <- D6 small key
 D6 escape room               <- boomerang
-D6 vire chest                <- rare peach stone
-D6 boss                      <- D6 small key
-D6 beamos room               <- D6 small key
-D6 2F armos chest            <- flippers
-D6 2F gibdo chest            <- D6 boss key
+D6 vire chest                <- D6 small key
+D6 boss                      <- sword
+D6 beamos room               <- D6 compass
+D6 2F gibdo chest            <- flippers
+D6 2F armos chest            <- D6 boss key
 D6 armos hall                <- rang ring L-2
 D6 spinner north             <- D6 dungeon map
-D6 magnet ball drop          <- D6 compass
 
-samasa desert pit            <- sword
+samasa desert pit            <- GBA time ring
 samasa desert chest          <- rupees, 20
 
 black beast's chest          <- power ring L-3
@@ -165,7 +165,7 @@ D5 cart chest                <- D5 compass
 D5 spinner chest             <- D5 small key
 D5 gibdo/zol chest           <- D5 small key
 D5 magnet ball chest         <- D5 dungeon map
-D5 terrace chest             <- victory ring
+D5 terrace chest             <- gasha seed
 D5 armos chest               <- D5 boss key
 D5 stalfos room              <- D5 small key
 D5 basement                  <- magnet gloves
