@@ -44,7 +44,7 @@ tower of winter              <- heart container
 
 woods of winter tree         <- gale seeds
 woods of winter, 1st cave    <- iron shield
-holly's house                <- boomerang
+holly's house                <- blue ring
 maku tree                    <- satchel
 
 D3 roller chest              <- switch hook
@@ -79,7 +79,7 @@ subrosia market, 1st item    <- rod of autumn
 eyeglass lake, across bridge <- heart container
 
 D6 1F east                   <- D6 small key
-D6 magnet ball drop          <- blue ring
+D6 magnet ball drop          <- boomerang
 D6 1F terrace                <- seed shooter
 D6 crystal trap room         <- D6 small key
 D6 escape room               <- boomerang
