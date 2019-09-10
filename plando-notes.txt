@@ -1,5 +1,4 @@
 TODOS:
-    * Replace gasha seeds with maps, compasses, hearts, rings, etc.
 
 OUTSTANDING BUGS:
     * Weird palette in D2
@@ -29,6 +28,7 @@ DONE TASKS:
         * Holly's house
         * D7 snow removal
     * Implement owl hints
+    * Replace gasha seeds with maps, compasses, hearts, rings, etc.
 
 NOT DOING:
     * Port harp of ages
