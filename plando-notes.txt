@@ -1,4 +1,21 @@
-TODOS:
+Notes on implementations of ages stuff:
+
+* SWITCH HOOK
+    * Ropes have a unique collisionReactionSet in ages.
+    * Doesn't work properly on iron masks, water tektites
+    * Might not work on all tiles it should work on? (Used arbitrary collision data?)
+
+* CANE:
+    * Behaves like grass
+    * Collision properties with enemies might be incorrect
+
+* SEED SHOOTER:
+    * Sprites appear behind icon
+
+* PUMPKIN HEAD:
+    * Cane does too much damage?
+    * Ghost borrows mothula collisions; a few minute differences?
+
 
 OUTSTANDING BUGS:
     * Weird palette in D2
