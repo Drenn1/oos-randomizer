@@ -298,7 +298,7 @@ d0 key chest:
   room: 0x0403
 d0 sword chest:
   treasure: sword
-  room: 0x0404
+  room: 0x0406
   ids: [{bank: 0x0a, addr: 0x7b90}] # not a real chest!
   subids: [{bank: 0x0a, addr: 0x7b92}]
 d0 rupee chest:
