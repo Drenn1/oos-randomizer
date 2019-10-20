@@ -214,6 +214,8 @@ func (rom *romState) mutate(warpMap map[string]string, seed uint32,
 				addr += 4
 			}
 		}
+	} else { // Keysanity
+		rom.data[rom.codeMutables["isKeysanityEnabled"].addr.fullOffset()] = 1
 	}
 
 	rom.setCompassData()
