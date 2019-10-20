@@ -352,6 +352,7 @@ ages:
     define BANK_OWL_TEXT,38
     define BANK_ROOM_TREASURES,38
     define STARTING_TREE_MAP_INDEX,78
+    define BANK_CUSTOM_SFX,de # Bank is subtracted by 0x39. In this case, 0x17 - 0x39 = 0xde (bank is 0x17).
 
     # hram
     define hDirtyBgPalettes,a6

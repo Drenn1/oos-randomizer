@@ -4,25 +4,6 @@ common:
   39/4c01/:
       db 18
 
-  # Sound pointers starting at index 0xd5 for D1 compass chime.
-  39/5a4e/: |
-      db BANK_CUSTOM_SFX
-      dw compassChimeD1Ptr
-      db BANK_CUSTOM_SFX
-      dw compassChimeD2Ptr
-      db BANK_CUSTOM_SFX
-      dw compassChimeD3Ptr
-      db BANK_CUSTOM_SFX
-      dw compassChimeD4Ptr
-      db BANK_CUSTOM_SFX
-      dw compassChimeD5Ptr
-      db BANK_CUSTOM_SFX
-      dw compassChimeD6Ptr
-      db BANK_CUSTOM_SFX
-      dw compassChimeD7Ptr
-      db BANK_CUSTOM_SFX
-      dw compassChimeD8Ptr
-
   # Not enough space in bank 0x39, so these overwrite unused waveforms.
   39/4dbc/compassChimeD1Ptr: |
       db b2
@@ -60,6 +41,25 @@ common:
 
 
 seasons:
+  # Sound pointers starting at index 0xd5 for D1 compass chime.
+  39/5a4e/: |
+      db BANK_CUSTOM_SFX
+      dw compassChimeD1Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD2Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD3Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD4Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD5Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD6Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD7Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD8Ptr
+
   # Sound data can be in any bank, but should correspond to BANK_CUSTOM_SFX so
   # pointers work.
   14/compassChimeD1Snd: |
@@ -342,9 +342,28 @@ seasons:
 
 
 ages:
+  # Sound pointers starting at index 0xd5 for D1 compass chime.
+  39/59c7/: |
+      db BANK_CUSTOM_SFX
+      dw compassChimeD1Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD2Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD3Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD4Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD5Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD6Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD7Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD8Ptr
+
   # Sound data can be in any bank, but should correspond to BANK_CUSTOM_SFX so
   # pointers work.
-  14/compassChimeD1Snd: |
+  17/compassChimeD1Snd: |
       db duty,2
 
       db vol9
@@ -370,7 +389,7 @@ ages:
       db rest,0c
       db ff
 
-  14/compassChimeD2Snd: |
+  17/compassChimeD2Snd: |
       db duty,2
 
       db vol9
@@ -413,7 +432,7 @@ ages:
       db rest,0c
       db ff
 
-  14/compassChimeD3Snd: |
+  17/compassChimeD3Snd: |
       db duty,2
 
       db vol9
@@ -443,7 +462,7 @@ ages:
       db note_b4,06
       db ff
 
-  14/compassChimeD4Snd: |
+  17/compassChimeD4Snd: |
       db duty,2
 
       db vol9
@@ -473,7 +492,7 @@ ages:
       db note_as4,06
       db ff
 
-  14/compassChimeD5Snd: |
+  17/compassChimeD5Snd: |
       db duty,2
 
       db vol9
@@ -502,7 +521,7 @@ ages:
       db note_c5,06
       db ff
 
-  14/compassChimeD6Snd: |
+  17/compassChimeD6Snd: |
       db duty,02
 
       db vol9
@@ -537,7 +556,7 @@ ages:
       db note_b4,06
       db ff
 
-  14/compassChimeD7Snd: |
+  17/compassChimeD7Snd: |
       db duty,2
 
       db vol9
@@ -566,7 +585,7 @@ ages:
       db note_d4,06
       db ff
 
-  14/compassChimeD8Snd: |
+  17/compassChimeD8Snd: |
       db duty,2
 
       db vol9

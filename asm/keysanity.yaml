@@ -17,7 +17,17 @@ common:
         ld a,c
         ret
 
+    # Returns dungeon index of compass to check for in 'a', and sound to play in
+    # 'c'.
     01/checkCompassChimes: |
+        ld e,38
+        ld hl,checkCompassChimes_body
+        call interBankCall
+        ld a,b
+        or a
+        ret
+
+    38/checkCompassChimes_body: |
         ld a,(wActiveGroup)
         ld b,a
         ld a,(wActiveRoom)
@@ -25,6 +35,7 @@ common:
         ld e,01
         ld hl,compassChimeTable
         call searchDoubleKey
+        ld b,0
         ret nc
 
         # If keysanity is disabled, dungeon index is based on the dungeon we're
@@ -34,6 +45,7 @@ common:
         jr nz,.keysanity
         ld c,SND_COMPASS
         ld a,(wDungeonIndex)
+        ld b,a
         ret
 
         .keysanity
@@ -45,7 +57,7 @@ common:
         ld c,a
 
         .gotsfx
-        ld a,(hl)
+        ld b,(hl)
         ret
 
 seasons:
@@ -110,7 +122,7 @@ seasons:
     3f/459d/: call setDungeonTextSubstitution
 
     # compass chimes
-    01/49ea/: call checkCompassChimes; nop; nop; nop
+    01/49ea/: call checkCompassChimes; ret z; nop; nop
     01/4a0b/: nop; nop; nop; nop; nop; nop; nop; nop; nop; nop; nop; nop; nop; ld a,c
 
 ages:
@@ -188,5 +200,5 @@ ages:
     3f/4597/: call setDungeonTextSubstitution
 
     # compass chimes
-    01/4a5d/: call checkCompassChimes; nop; nop; nop
+    01/4a5d/: call checkCompassChimes; ret z; nop; nop
     01/4a70/: nop; nop; nop; nop; nop; nop; nop; nop; nop; nop; nop; nop; nop; ld a,c

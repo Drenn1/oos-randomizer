@@ -473,8 +473,12 @@ func (rom *romState) initBanks(keysanity bool) {
 		makeCollectModeTable(rom.itemSlots, keysanity))
 	rom.replaceRaw(address{roomTreasureBank, 0}, "roomTreasures",
 		makeRoomTreasureTable(rom.game, rom.itemSlots, keysanity))
-	rom.replaceRaw(address{0x01, 0}, "compassChimeTable",
+
+	// compass chime table can go anywhere (had to move it out of bank 1). Bank
+	// 0x38 seemed like a good candidate for both games.
+	rom.replaceRaw(address{0x38, 0}, "compassChimeTable",
 		makeCompassChimeTable(rom.game, rom.itemSlots))
+
 	rom.replaceRaw(address{0x3f, 0}, "owlTextOffsets",
 		string(make([]byte, numOwlIds*2)))
 
