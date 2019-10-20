@@ -82,14 +82,14 @@ type romState struct {
 	assembler    *assembler
 }
 
-func newRomState(data []byte, game int) *romState {
+func newRomState(data []byte, game int, keysanity bool) *romState {
 	rom := &romState{
 		game:      game,
 		data:      data,
 		treasures: loadTreasures(data, game),
 	}
 	rom.itemSlots = rom.loadSlots()
-	rom.initBanks()
+	rom.initBanks(keysanity)
 	return rom
 }
 
@@ -141,13 +141,13 @@ func (rom *romState) mutate(warpMap map[string]string, seed uint32,
 
 	rom.setBossItemAddrs()
 	rom.setSeedData()
-	rom.setRoomTreasureData()
+	rom.setRoomTreasureData(ropts.keysanity)
 	rom.setFileSelectText(optString(seed, ropts, "+"))
 	rom.attachText()
 
 	// regenerate collect mode table to accommodate changes based on contents.
 	rom.codeMutables["collectModeTable"].new =
-		[]byte(makeCollectModeTable(rom.itemSlots))
+		[]byte(makeCollectModeTable(rom.itemSlots, ropts.keysanity))
 	rom.codeMutables["compassChimeTable"].new =
 		[]byte(makeCompassChimeTable(rom.game, rom.itemSlots))
 
@@ -175,29 +175,22 @@ func (rom *romState) mutate(warpMap map[string]string, seed uint32,
 		rom.itemSlots["great furnace"].mutate(rom.data)
 		rom.itemSlots["master diver's reward"].mutate(rom.data)
 
-		/*
 		// annoying special case to prevent text on key drop
-		// (TODO: re-enable this when keysanity is disabled? Mind the subid may
-		// need to change)
 		mut := rom.itemSlots["d7 armos puzzle"]
-		if mut.treasure.id == rom.treasures["d7 small key"].id {
-			rom.data[mut.subidAddrs[0].fullOffset()] = 0x01
+		if !ropts.keysanity && mut.treasure.id == rom.treasures["d7 small key"].id {
+			rom.data[mut.subidAddrs[0].fullOffset()] = 0x09
 		}
-		*/
 	} else {
 		rom.itemSlots["nayru's house"].mutate(rom.data)
 		rom.itemSlots["deku forest soldier"].mutate(rom.data)
 		rom.itemSlots["target carts 2"].mutate(rom.data)
 		rom.itemSlots["hidden tokay cave"].mutate(rom.data)
 
-		/*
 		// other special case to prevent text on key drop
-		// (TODO: see above)
 		mut := rom.itemSlots["d8 stalfos"]
-		if mut.treasure.id == rom.treasures["d8 small key"].id {
-			rom.data[mut.subidAddrs[0].fullOffset()] = 0x00
+		if !ropts.keysanity && mut.treasure.id == rom.treasures["d8 small key"].id {
+			rom.data[mut.subidAddrs[0].fullOffset()] = 0x09
 		}
-		*/
 	}
 
 	// Fix dungeon item text for non-keysanity
@@ -352,9 +345,9 @@ func inflictCamelCase(s string) string {
 
 // fill table. initial table is blank, since it's created before items are
 // placed.
-func (rom *romState) setRoomTreasureData() {
+func (rom *romState) setRoomTreasureData(keysanity bool) {
 	rom.codeMutables["roomTreasures"].new =
-		[]byte(makeRoomTreasureTable(rom.game, rom.itemSlots))
+		[]byte(makeRoomTreasureTable(rom.game, rom.itemSlots, keysanity))
 	if rom.game == gameSeasons {
 		t := rom.itemSlots["d7 zol button"].treasure
 		rom.codeMutables["aboveD7ZolButtonId"].new = []byte{t.id}

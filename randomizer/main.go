@@ -158,7 +158,7 @@ func Main() {
 		// i forget why or whether this is useful.
 		var rom *romState
 		if flag.Arg(1) == "" {
-			rom = newRomState(nil, game)
+			rom = newRomState(nil, game, ropts.keysanity)
 		} else {
 			f, err := os.Open(flag.Arg(1))
 			if err != nil {
@@ -171,7 +171,7 @@ func Main() {
 				fatal(err, printErrf)
 				return
 			}
-			rom = newRomState(b, game)
+			rom = newRomState(b, game, ropts.keysanity)
 		}
 
 		fmt.Println(rom.findAddr(byte(bank), uint16(addr)))
@@ -199,7 +199,7 @@ func Main() {
 		}
 		game := reverseLookupOrPanic(gameNames, tokens[0]).(int)
 
-		rom := newRomState(nil, game)
+		rom := newRomState(nil, game, ropts.keysanity)
 		if err := rom.showAsm(tokens[1], os.Stdout); err != nil {
 			fatal(err, printErrf)
 			return
@@ -244,7 +244,7 @@ func runRandomizer(ui *uiInstance, ropts randomizerOptions, logf logFunc) {
 			fatal(err, logf)
 			return
 		} else {
-			rom = newRomState(b, game)
+			rom = newRomState(b, game, ropts.keysanity)
 		}
 
 		logf("randomizing %s.", infile)

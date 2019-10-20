@@ -1,15 +1,21 @@
 common:
-    # Use "param" instead of "wDungeonIndex" for determining which dungeon's keys
-    # to increment, and set up text substitution.
+    # Set to 01 by randomizer if keysanity is enabled
+    00/isKeysanityEnabled: db 00
+
+    # If keysanity is enabled, use "param" instead of "wDungeonIndex" for
+    # determining which dungeon's keys to increment, and set up text
+    # substitution.
     3f/setDungeonTextSubstitution: |
+        ld a,(isKeysanityEnabled)
+        or a
+        ld a,(wDungeonIndex)
+        ret z
+
         ld a,c
         add a,98
         ld (wTextSubstitutions),a
         ld a,c
         ret
-
-    # Set to 01 by randomizer if keysanity is enabled
-    01/isKeysanityEnabled: db 00
 
     01/checkCompassChimes: |
         ld a,(wActiveGroup)
@@ -21,18 +27,23 @@ common:
         call searchDoubleKey
         ret nc
 
-        # Normal compass sound if keysanity is disabled
+        # If keysanity is disabled, dungeon index is based on the dungeon we're
+        # currently in, and the compass sound is default.
         ld a,(isKeysanityEnabled)
         or a
+        jr nz,.keysanity
         ld c,SND_COMPASS
-        jr z,.gotsfx
+        ld a,(wDungeonIndex)
+        ret
 
+        .keysanity
         ld a,(hl)
         cp a,0c # Check past mermaid's cave
         ld c,da # d4 + 6
         jr z,.gotsfx
         add a,d4
         ld c,a
+
         .gotsfx
         ld a,(hl)
         ret
@@ -46,6 +57,7 @@ seasons:
     # All 4 of these tables are referenced in rom.go's "mutate" function to
     # modify the text byte (the 3rd byte) if keysanity is disabled.
     15/smallKeyTreasureData: |
+        # Indices 0-8 are dungeon-specific keys.
         db 38,00,90,42
         db 38,01,90,42
         db 38,02,90,42
@@ -55,6 +67,10 @@ seasons:
         db 38,06,90,42
         db 38,07,90,42
         db 38,08,90,42
+
+        # 09 = special case for small key falling from ceiling. Only for
+        # non-keysanity. (originally subid 1)
+        db 28,ff,ff,42
 
     15/bossKeyTreasureData: |
         db 38,00,91,43
@@ -113,10 +129,14 @@ ages:
         db 38,06,90,42
         db 38,07,90,42
         db 38,08,90,42
+
+        # 09 = special case for small key falling from ceiling. Only for
+        # non-keysanity. (originally subid 1)
+        db 28,ff,1a,42
+
         db 00,00,00,00
         db 00,00,00,00
-        db 00,00,00,00
-        db 38,0c,90,42
+        db 38,0c,90,42 # 0c = mermaid's cave past
 
     16/bossKeyTreasureData: |
         db 38,00,91,43
