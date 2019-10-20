@@ -152,7 +152,7 @@ func makeCompassChimeTable(game int, itemSlots map[string]*itemSlot) string {
 		var err error
 		if slot.treasure == nil {
 			_, err = b.Write([]byte{slot.group, slot.room, 0x00})
-		count += 1
+			count += 1
 			continue
 		} else if !(slot.treasure.id == 0x30 || slot.treasure.id == 0x31) {
 			continue

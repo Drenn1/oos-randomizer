@@ -1,0 +1,611 @@
+common:
+  # Replace conditional jump with absolute jump to allow sound effects to be in
+  # banks lower than 0x39
+  39/4c01/:
+      db 18
+
+  # Sound pointers starting at index 0xd5 for D1 compass chime.
+  39/5a4e/: |
+      db BANK_CUSTOM_SFX
+      dw compassChimeD1Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD2Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD3Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD4Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD5Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD6Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD7Ptr
+      db BANK_CUSTOM_SFX
+      dw compassChimeD8Ptr
+
+  # Not enough space in bank 0x39, so these overwrite unused waveforms.
+  39/4dbc/compassChimeD1Ptr: |
+      db b2
+      dw compassChimeD1Snd
+      db ff
+  39/4dc0/compassChimeD2Ptr: |
+      db b2
+      dw compassChimeD2Snd
+      db ff
+  39/4dc4/compassChimeD3Ptr: |
+      db b2
+      dw compassChimeD3Snd
+      db ff
+  39/4dc8/compassChimeD4Ptr: |
+      db b2
+      dw compassChimeD4Snd
+      db ff
+
+  39/4e5c/compassChimeD5Ptr: |
+      db b2
+      dw compassChimeD5Snd
+      db ff
+  39/4e60/compassChimeD6Ptr: |
+      db b2
+      dw compassChimeD6Snd
+      db ff
+  39/4e64/compassChimeD7Ptr: |
+      db b2
+      dw compassChimeD7Snd
+      db ff
+  39/4e68/compassChimeD8Ptr: |
+      db b2
+      dw compassChimeD8Snd
+      db ff
+
+
+seasons:
+  # Sound data can be in any bank, but should correspond to BANK_CUSTOM_SFX so
+  # pointers work.
+  14/compassChimeD1Snd: |
+      db duty,2
+      db vibrato,72
+  
+      db vol9
+      db note_b4,06
+      db vol3
+      db note_b4,06
+  
+      db vol9
+      db note_c5,06
+      db vol3
+      db note_c5,06
+  
+      db vol9
+      db note_cs5,18
+      db vol3
+      db note_cs5,06
+      db ff
+  
+  14/compassChimeD2Snd: |
+      db duty,2
+  
+      db vol9
+      db note_d4,06
+      db vol3
+      db note_d4,06
+  
+      db vol9
+      db note_ds4,06
+      db vol3
+      db note_ds4,06
+  
+      db vol9
+      db note_a4,06
+      db vol3
+      db note_a4,06
+  
+      db vol9
+      db note_d5,06
+      db vol3
+      db note_d5,06
+      db ff
+
+  14/compassChimeD3Snd: |
+      db duty,2
+
+      db vol9
+      db note_e4,06
+      db vol3
+      db note_e4,06
+
+      db vol9
+      db note_b4,06
+      db vol3
+      db note_b4,06
+
+      db vol9
+      db note_e4,06
+      db vol3
+      db note_e4,06
+
+      db vol9
+      db note_ds4,06
+      db vol3
+      db note_ds4,06
+
+      db vol9
+      db note_as4,06
+      db vol3
+      db note_as4,06
+      db ff
+
+  14/compassChimeD4Snd: |
+      db duty,2
+
+      db vol9
+      db note_a3,06
+      db vol3
+      db note_a3,06
+
+      db vol9
+      db note_a3,05
+      db vol3
+      db note_a3,01
+
+      db vol9
+      db note_c4,05
+      db vol3
+      db note_c4,01
+
+      db vol9
+      db note_a3,05
+      db vol3
+      db note_a3,01
+
+      db vol9
+      db note_c4,05
+      db vol3
+      db note_c4,01
+
+      db vol9
+      db note_g4,05
+      db vol3
+      db note_g4,01
+
+      db vol9
+      db note_fs4,06
+      db vol3
+      db note_fs4,06
+      db ff
+
+  14/compassChimeD5Snd: |
+      db duty,2
+      db vol9
+      db note_fs3,06
+      db vol3
+      db note_fs3,06
+
+      db vol9
+      db note_fs3,05
+      db vol3
+      db note_fs3,01
+
+      db vol9
+      db note_fs3,05
+      db vol3
+      db note_fs3,01
+
+      db vol9
+      db note_cs4,06
+      db vol3
+      db note_cs4,06
+      db rest,0c
+
+      db vol9
+      db note_c4,06
+      db vol3
+      db note_c4,06
+
+      db vol9
+      db note_a3,05
+      db vol3
+      db note_a3,01
+
+      db vol9
+      db note_fs3,05
+      db vol3
+      db note_fs3,01
+
+      db vol9
+      db note_e4,06
+      db vol3
+      db note_e4,06
+      db ff
+
+  14/compassChimeD6Snd: |
+      db duty,2
+
+      db vol9
+      db note_fs3,06
+      db vol3
+      db note_fs3,06
+
+      db vol9
+      db note_cs4,06
+      db vol3
+      db note_cs4,06
+
+      db vol9
+      db note_c4,06
+      db vol3
+      db note_c4,06
+
+      db rest,0c
+
+      db vol9
+      db note_gs3,05
+      db vol3
+      db note_gs3,01
+
+      db vol9
+      db note_a3,05
+      db vol3
+      db note_a3,01
+
+      db vol9
+      db note_b3,05
+      db vol3
+      db note_b3,01
+
+      db vol9
+      db note_a3,05
+      db vol3
+      db note_a3,01
+
+      db vol9
+      db note_gs3,06
+      db vol3
+      db note_gs3,06
+      db ff
+
+
+  14/compassChimeD7Snd: |
+      db duty,2
+
+      db vol9
+      db note_d4,06
+      db vol3
+      db note_d4,06
+
+      db vol9
+      db note_f4,06
+      db vol3
+      db note_f4,06
+
+      db vol9
+      db note_e4,06
+      db vol3
+      db note_e4,06
+
+      db vol9
+      db note_ds4,06
+      db vol3
+      db note_ds4,06
+
+      db rest,0c
+
+      db vol9
+      db note_d4,06
+      db vol3
+      db note_d4,06
+      db ff
+
+  14/compassChimeD8Snd: |
+      db duty,2
+
+      db vol9
+      db note_c4,06
+      db vol3
+      db note_c4,06
+
+      db vol9
+      db note_cs4,06
+      db vol3
+      db note_cs4,06
+
+      db vol9
+      db note_c4,06
+      db vol3
+      db note_c4,06
+
+      db vol9
+      db note_cs4,06
+      db vol3
+      db note_cs4,06
+
+      db vol9
+      db note_c4,05
+      db vol3
+      db note_c4,01
+      db vol9
+      db note_c4,05
+      db vol3
+      db note_c4,01
+
+      db vol9
+      db note_c4,05
+      db vol3
+      db note_c4,01
+      db rest,06
+
+      db vol9
+      db note_c4,06
+      db vol3
+      db note_c4,06
+      db ff
+
+
+ages:
+  # Sound data can be in any bank, but should correspond to BANK_CUSTOM_SFX so
+  # pointers work.
+  14/compassChimeD1Snd: |
+      db duty,2
+
+      db vol9
+      db note_as4,06
+      db vol3
+      db note_as4,06
+
+      db vol9
+      db note_f5,06
+      db vol3
+      db note_f5,06
+      db rest,0c
+
+      db vol9
+      db note_e5,06
+      db vol3
+      db note_e5,06
+
+      db vol9
+      db note_f5,06
+      db vol3
+      db note_f5,06
+      db rest,0c
+      db ff
+
+  14/compassChimeD2Snd: |
+      db duty,2
+
+      db vol9
+      db note_ds4,06
+      db vol3
+      db note_ds4,06
+
+      db vol9
+      db note_ds4,06
+      db vol3
+      db note_ds4,06
+
+      db vol9
+      db note_fs4,06
+      db vol3
+      db note_fs4,06
+      db rest,0c
+
+      db vol9
+      db note_ds4,05
+      db vol3
+      db note_ds4,01
+      db vol9
+      db note_ds4,05
+      db vol3
+      db note_ds4,01
+      db vol9
+      db note_ds4,05
+      db vol3
+      db note_ds4,01
+      db vol9
+      db note_ds4,05
+      db vol3
+      db note_ds4,01
+
+      db vol9
+      db note_fs4,06
+      db vol3
+      db note_fs4,06
+      db rest,0c
+      db ff
+
+  14/compassChimeD3Snd: |
+      db duty,2
+
+      db vol9
+      db note_c5,06
+      db vol3
+      db note_c5,06
+
+      db vol9
+      db note_b4,06
+      db vol3
+      db note_b4,06
+      db rest,06
+
+      db vol9
+      db note_b4,05
+      db vol3
+      db note_b4,01
+
+      db vol9
+      db note_c5,06
+      db vol3
+      db note_c5,06
+
+      db vol9
+      db note_b4,06
+      db vol3
+      db note_b4,06
+      db ff
+
+  14/compassChimeD4Snd: |
+      db duty,2
+
+      db vol9
+      db note_b4,06
+      db vol3
+      db note_b4,06
+      db rest,0c
+
+      db vol9
+      db note_cs5,06
+      db vol3
+      db note_cs5,06
+
+      db vol9
+      db note_ds5,05
+      db vol3
+      db note_ds5,01
+
+      db vol9
+      db note_b4,05
+      db vol3
+      db note_b4,01
+
+      db vol9
+      db note_as4,06
+      db vol3
+      db note_as4,06
+      db ff
+
+  14/compassChimeD5Snd: |
+      db duty,2
+
+      db vol9
+      db note_a4,06
+      db vol3
+      db note_a4,06
+
+      db vol9
+      db note_gs4,06
+      db vol3
+      db note_gs4,06
+
+      db vol9
+      db note_g4,06
+      db vol3
+      db note_g4,06
+
+      db vol9
+      db note_cs5,06
+      db vol3
+      db note_cs5,06
+
+      db vol9
+      db note_c5,06
+      db vol3
+      db note_c5,06
+      db ff
+
+  14/compassChimeD6Snd: |
+      db duty,02
+
+      db vol9
+      db note_ds4,06
+      db vol3
+      db note_ds4,06
+
+      db vol9
+      db note_f4,06
+      db vol3
+      db note_f4,06
+
+      db vol9
+      db note_as4,06
+      db vol3
+      db note_as4,06
+      db rest,0c
+
+      db vol9
+      db note_ds4,06
+      db vol3
+      db note_ds4,06
+
+      db vol9
+      db note_f4,06
+      db vol3
+      db note_f4,06
+
+      db vol9
+      db note_b4,06
+      db vol3
+      db note_b4,06
+      db ff
+
+  14/compassChimeD7Snd: |
+      db duty,2
+
+      db vol9
+      db note_e4,06
+      db vol3
+      db note_e4,06
+
+      db vol9
+      db note_ds4,06
+      db vol3
+      db note_ds4,06
+
+      db vol9
+      db note_f4,06
+      db vol3
+      db note_f4,06
+
+      db vol9
+      db note_e4,06
+      db vol3
+      db note_e4,06
+
+      db vol9
+      db note_d4,06
+      db vol3
+      db note_d4,06
+      db ff
+
+  14/compassChimeD8Snd: |
+      db duty,2
+
+      db vol9
+      db note_gs2,06
+      db vol3
+      db note_gs2,06
+
+      db vol9
+      db note_a2,06
+      db vol3
+      db note_a2,06
+
+      db vol9
+      db note_gs2,06
+      db vol3
+      db note_gs2,06
+
+      db vol9
+      db note_e2,06
+      db vol3
+      db note_e2,06
+
+      db vol9
+      db note_gs2,06
+      db vol3
+      db note_gs2,06
+
+      db vol9
+      db note_a2,06
+      db vol3
+      db note_a2,06
+
+      db vol9
+      db note_gs2,06
+      db vol3
+      db note_gs2,06
+
+      db vol9
+      db note_e2,06
+      db vol3
+      db note_e2,06
+      db ff

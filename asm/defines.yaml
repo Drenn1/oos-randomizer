@@ -90,6 +90,111 @@ common:
     define delay1frame,f0
     define delay30frames,f6
 
+    # music macros
+    define rest,60
+    define vol3,d3
+    define vol9,d9
+    define duty,f6
+    define vibrato,f9
+
+    # notes
+    define note_c1,0
+    define note_cs1,1
+    define note_d1,2
+    define note_ds1,3
+    define note_e1,4
+    define note_f1,5
+    define note_fs1,6
+    define note_g1,7
+    define note_gs1,8
+    define note_a1,9
+    define note_as1,a
+    define note_b1,b
+    define note_c2,c
+    define note_cs2,d
+    define note_d2,e
+    define note_ds2,f
+    define note_e2,10
+    define note_f2,11
+    define note_fs2,12
+    define note_g2,13
+    define note_gs2,14
+    define note_a2,15
+    define note_as2,16
+    define note_b2,17
+    define note_c3,18
+    define note_cs3,19
+    define note_d3,1a
+    define note_ds3,1b
+    define note_e3,1c
+    define note_f3,1d
+    define note_fs3,1e
+    define note_g3,1f
+    define note_gs3,20
+    define note_a3,21
+    define note_as3,22
+    define note_b3,23
+    define note_c4,24
+    define note_cs4,25
+    define note_d4,26
+    define note_ds4,27
+    define note_e4,28
+    define note_f4,29
+    define note_fs4,2a
+    define note_g4,2b
+    define note_gs4,2c
+    define note_a4,2d
+    define note_as4,2e
+    define note_b4,2f
+    define note_c5,30
+    define note_cs5,31
+    define note_d5,32
+    define note_ds5,33
+    define note_e5,34
+    define note_f5,35
+    define note_fs5,36
+    define note_g5,37
+    define note_gs5,38
+    define note_a5,39
+    define note_as5,3a
+    define note_b5,3b
+    define note_c6,3c
+    define note_cs6,3d
+    define note_d6,3e
+    define note_ds6,3f
+    define note_e6,40
+    define note_f6,41
+    define note_fs6,42
+    define note_g6,43
+    define note_gs6,44
+    define note_a6,45
+    define note_as6,46
+    define note_b6,47
+    define note_c7,48
+    define note_cs7,49
+    define note_d7,4a
+    define note_ds7,4b
+    define note_e7,4c
+    define note_f7,4d
+    define note_fs7,4e
+    define note_g7,4f
+    define note_gs7,50
+    define note_a7,51
+    define note_as7,52
+    define note_b7,53
+    define note_c8,54
+    define note_cs8,55
+    define note_d8,56
+    define note_ds8,57
+    define note_e8,58
+    define note_f8,59
+    define note_fs8,5a
+    define note_g8,5b
+    define note_gs8,5c
+    define note_a8,5d
+    define note_as8,5e
+    define note_b8,5f
+
     # hram
     define hGameboyType,96
     define hRomBank,97
@@ -136,6 +241,7 @@ seasons:
     define BANK_TREASURE_DATA,15
     define BANK_OWL_TEXT,3f
     define BANK_ROOM_TREASURES,3f
+    define BANK_CUSTOM_SFX,db # Bank is subtracted by 0x39. In this case, 0x14 - 0x39 = 0xdb (bank is 0x14).
     define SEASON_SPRING,00
     define SEASON_SUMMER,01
     define SEASON_AUTUMN,02 # oracles-disasm calls this SEASON_FALL but i refuse

@@ -18,6 +18,13 @@ common:
         call searchDoubleKey
         ret nc
         ld a,(hl)
+        cp a,0c # Past mermaid's cave
+        ld c,da # d4 + 6
+        jr z,.label
+        add a,d4
+        ld c,a
+        .label
+        ld a,(hl)
         ret
 
 seasons:
@@ -77,8 +84,8 @@ seasons:
     3f/459d/: call setDungeonTextSubstitution
 
     # compass chimes
-    01/49ea/: call checkCompassChimes; ret nc; nop; nop
-    01/4a0b/: nop; nop; nop; nop; nop; nop; nop; nop; nop; nop; nop; nop;
+    01/49ea/: call checkCompassChimes; nop; nop; nop
+    01/4a0b/: nop; nop; nop; nop; nop; nop; nop; nop; nop; nop; nop; nop; nop; ld a,c
 
 ages:
     16/53f3/: dw smallKeyTreasureData
@@ -151,5 +158,5 @@ ages:
     3f/4597/: call setDungeonTextSubstitution
 
     # compass chimes
-    01/4a5d/: call checkCompassChimes; ret nc; nop; nop
-    01/4a70/: nop; nop; nop; nop; nop; nop; nop; nop; nop; nop; nop; nop;
+    01/4a5d/: call checkCompassChimes; nop; nop; nop
+    01/4a70/: nop; nop; nop; nop; nop; nop; nop; nop; nop; nop; nop; nop; nop; ld a,c
