@@ -205,6 +205,7 @@ ages:
       db 01,a5,00,45,0b # cont.
       db 01,a5,00,55,6c # cont.
       db 00,83,00,44,d7 # portal outside D2 present
+      db 01,48,02,31,cd # past maku road: remove dirt when exiting
       db ff
 
   # burning the first tree in yoll graveyard should set room flag 1 so that it
@@ -254,3 +255,7 @@ ages:
   # put a "return bush" for long hook across from syrup's shop.
   23/7ea0/: db 27,c8
   23/7ead/: db 22
+
+  # Maku Path: Prevent Softlock when exiting cave (see tileSubTable)
+  25/5c9a/: db 15
+  26/4a9e/: db 15
