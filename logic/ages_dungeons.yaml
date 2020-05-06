@@ -34,8 +34,8 @@ enter d2: {or: []}
 
 # 0 keys
 spiked beetles owl: [mystery seeds, enter d2]
-d2 bombed terrace: [enter d2, kill spiked beetle, bombs]
-d2 moblin drop: [enter d2, kill spiked beetle, kill normal]
+d2 bombed terrace: [enter d2, or: [kill spiked beetle, [feather, or: [kill switch hook, [hard, push enemy]], count: [2, d2 small key]]], bombs]
+d2 moblin drop: [enter d2, or: [kill spiked beetle, [feather, count: 2, d2 small key]]], kill normal]
 
 # potentially 2 keys w/ vanilla route
 enter swoop: [enter d2,
@@ -56,7 +56,7 @@ d2 statue puzzle: [d2 moblin platform,
     or: [bracelet, cane, [hard, switch hook, push enemy]]]
 
 # 4 keys
-d2 rope room: [enter d2, kill switch hook, count: [4, d2 small key]]
+d2 rope room: [enter d2, or: [kill switch hook, [hard, push enemy]] count: [4, d2 small key]]
 d2 ladder chest: [enter d2, bombs, kill switch hook, count: [4, d2 small key]]
 
 # 5 keys
